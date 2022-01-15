@@ -62,8 +62,6 @@ with open(r'/home/pi/RSL/userReviews.csv', 'r', encoding= 'utf-8-sig') as userRe
             finalauthor.append(i[2])
             finalmovie.append(str(i[0]))
             finalscore.append((i[1]))
-
-#rec = tuple(zip(finalauthor, finalmovie, finalscore))
 rec = list(map(list, zip(finalauthor, finalmovie, finalscore)))
 
 # %%
